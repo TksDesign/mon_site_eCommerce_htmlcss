@@ -24,7 +24,9 @@ Rubik: 300, 400, 500, 600
     --percent50: 50%;
 
     --fw3: 300;
-    --fw5: 500: --fw6: 600: --fw7: 700;
+    --fw5: 500;
+    --fw6: 600;
+    --fw7: 700;
     --fw8: 800;
 
     --trans-background-color: background-color .3s, color .3s;
@@ -189,8 +191,9 @@ h4 {
     display: block;
     transition: transform 0.3s ease-in-out;
 }
-.object-cover img:hover{
-    transform:  scale(1.2);
+
+.object-cover img:hover {
+    transform: scale(1.2);
 }
 
 .products .media {
@@ -258,7 +261,7 @@ h4 {
 /* header */
 
 
-:where(.off-canvas,header) li>a {
+:where(.off-canvas, header) li>a {
     display: flex;
     position: relative;
     line-height: inherit;
@@ -510,12 +513,12 @@ form.search button:hover {
 
 /* nouveau menu reponsive de moins de 900px */
 
-.site-off{
+.site-off {
     position: fixed;
     width: 320px;
     height: var(--percent100);
     background-color: var(--white-color);
-    overflow-y:auto ;
+    overflow-y: auto;
     z-index: 100;
 
 }
@@ -526,39 +529,43 @@ form.search button:hover {
     touch-action: auto;
     padding-left: 1.5em;
 }
-.off-canvas .canvas-header{
-color: var(--white-color);
-justify-content: space-between;
-padding: 3.5em;
-margin: -1.5em -2.5em 1.5em;
-background-color: var(--secondary-dark-color);
-border-bottom-right-radius: 200px 35px ;
+
+.off-canvas .canvas-header {
+    color: var(--white-color);
+    justify-content: space-between;
+    padding: 3.5em;
+    margin: -1.5em -2.5em 1.5em;
+    background-color: var(--secondary-dark-color);
+    border-bottom-right-radius: 200px 35px;
 }
-.off-canvas .canvas-header .logo{
+
+.off-canvas .canvas-header .logo {
     z-index: 10;
     position: relative;
 }
-.off-canvas .canvas-header .logo .circle{
+
+.off-canvas .canvas-header .logo .circle {
     opacity: .75;
 }
 
-.t-close{
-font-size: 1.25em;
-width: 32px;
-height: 32px;
-border-radius: var(--percent100);
-background-color: var(--secondary-dark-color);
-color: var(--white-color);
-transition: var(--trans-background-color);
+.t-close {
+    font-size: 1.25em;
+    width: 32px;
+    height: 32px;
+    border-radius: var(--percent100);
+    background-color: var(--secondary-dark-color);
+    color: var(--white-color);
+    transition: var(--trans-background-color);
 }
-.t-close:hover{
+
+.t-close:hover {
     background-color: var(--white-color);
     color: var(--secondary-dark-color);
     opacity: .75;
 
 }
 
-.off-canvas .dpt-head{
+.off-canvas .dpt-head {
     font-size: var(--font-small);
     padding: 1em;
     margin-bottom: 1em;
@@ -566,7 +573,8 @@ transition: var(--trans-background-color);
     background-color: var(--light-ba-color);
     border-radius: 7px 7px 0 0;
 }
-.off-canvas .has-child > :where(ul,.mega){
+
+.off-canvas .has-child> :where(ul, .mega) {
     font-size: var(--font-small);
     font-weight: var(--fw3);
     line-height: 28px;
@@ -575,13 +583,16 @@ transition: var(--trans-background-color);
     height: auto;
     max-height: 0;
     overflow: hidden;
-    transition: max-height .3s cubic-bezier(0.215,0.610,0.355,1);
+    transition: max-height .3s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
-.off-canvas .expand >:where(ul,.mega){
+
+.off-canvas .expand>:where(ul, .mega) {
     max-height: 2000px;
 
 }
-.off-canvas .thetop-nav ul , .off-canvas nav>ul{
+
+.off-canvas .thetop-nav ul,
+.off-canvas nav>ul {
     flex-direction: column;
     align-items: flex-start;
     font-size: var(--font-small);
@@ -589,28 +600,35 @@ transition: var(--trans-background-color);
     margin: 1.25em 0;
     border-top: 1px solid var(--border-color);
 }
- .off-canvas nav .mega .products{
+
+.off-canvas nav .mega .products {
     display: none;
- }
- .off-canvas .has-child .icon-small{
+}
+
+.off-canvas .has-child .icon-small {
     padding: 0.5em;
     line-height: inherit;
- }
- .off-canvas .has-child .icon-small i{
+}
+
+.off-canvas .has-child .icon-small i {
     transform: rotate(90deg);
- }
- .off-canvas .has-child{
-    width:var(--percent100);
- }
-.off-canvas .thetop-nav .right > ul > :where(:nth-child(6), li:nth-child(5)) > a{
+}
+
+.off-canvas .has-child {
+    width: var(--percent100);
+}
+
+.off-canvas .thetop-nav .right>ul> :where(:nth-child(6), li:nth-child(5))>a {
     display: none;
 
 }
+
 .off-canvas .thetop-nav .right ul ul {
     display: flex;
     flex-direction: row;
 }
-.off-canvas .thetop-nav .right ul ul li a{
+
+.off-canvas .thetop-nav .right ul ul li a {
     padding: 0.5em;
     border: 1px solid var(--border-color);
     line-height: 16px;
